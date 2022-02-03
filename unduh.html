@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- NON BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Jatayu | Unduh Data</title>
+</head>
+
+<body class="bg-dark">
+  <!--awal navbar-->
+  <nav class="navbar navbar-dark bg-transparent">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="images/logo_jatayu.png" alt="logo_jatayu" width="250">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-end" style="color: turquoise;" aria-current="page" href="tentang.html">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-end" style="color: turquoise;" href="#">API</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-end" style="color: turquoise;" href="unduh.html">Unduh Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-end" style="color: turquoise;" href="kontak.html">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--akhir navbar-->
+  
+  <!--konten-->
+  <section class="judul container text-center text-light">
+    <h1>UNDUH DATA</h1>
+  </section>
+
+  <section id="unduh">
+    <form class="container text-light" action="">
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <h5>Pilih Data Parameter</h5>
+        </div>
+        <div class="col-3">
+          <h5>Pilih Rentang Waktu</h5>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <label>Prediksi :</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="CAPE">
+            <label class="form-check-label" for="CAPE">
+              CAPE
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="ConvectiveInhibition">
+            <label class="form-check-label" for="ConvectiveInhibition">
+              Convective Inhibition
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="CloudCeiling">
+            <label class="form-check-label" for="CloudCeiling">
+              Cloud Ceiling
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="LowLevelTurbulance">
+            <label class="form-check-label" for="LowLevelTurbulance">
+              Low Level Turbulance
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="LowLevelWindShear">
+            <label class="form-check-label" for="LowLevelWindShear">
+              Low Level Wind Shear
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="MeanSealevelPreasureVisibility">
+            <label class="form-check-label" for="MeanSealevelPreasureVisibility">
+              Mean Sea level Preasure Visibility
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="MaximumWindSpeed">
+            <label class="form-check-label" for="MaximumWindSpeed">
+              Maximum Wind Speed (10 m)
+            </label>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mb-3">
+            <label for="datetime-local" class="form-label">Awal :</label>
+            <input type="datetime-local" class="form-control" id="datetime-local">
+          </div>
+          <div class="mb-3">
+            <label for="datetime-local" class="form-label">Akhir :</label>
+            <input type="datetime-local" class="form-control" id="datetime-local">
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-evenly mt-3">
+        <div class="col-6">
+          <label>Observasi :</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Awan Tumbuh
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+              Cloud Top Height
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+              Cloud Top Pressure
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+              Cloud Top Temperature
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row-cols-auto text-center mt-3">
+        <button type="submit" class="btn text-dark" style="background: #40E0D0;">
+          <img src="images/download.png" alt="download" width="18" class="d-inline-block">
+          <strong> Download</strong>
+        </button>
+      </div>
+    </form>
+  </section>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
