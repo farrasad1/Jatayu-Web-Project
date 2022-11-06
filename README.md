@@ -4,7 +4,7 @@
 
 JATAYU is an air transport safety DSS website project owned by Indonesian National Institute of Aeronanutics and Space (LAPAN) which is currently under development. I was a Junior Frontend Developer Intern on this project for 2 months. This project start from July 2021 until August 2021.
 
-———————————————————
+——————————————————
 
 **(Bahasa Indonesia)**
 
