@@ -1,0 +1,37 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+}
+
+footer {
+  background: #fff;
+  color: black;
+  padding: 3cm;
+
+  margin-top: auto;
+}
+
+.judul {
+  padding: 2rem 1rem;
+  background-color: transparent;
+}
+
+.link-effect::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.link-effect:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}

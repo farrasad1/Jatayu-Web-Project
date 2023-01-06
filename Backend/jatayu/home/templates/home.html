@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- NON BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Jatayu | Kontak</title>
+</head>
+
+<body class="bg-dark">
+  <!--awal navbar-->
+  <nav class="navbar navbar-dark bg-transparent">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="{% static 'images/logo_jatayu.png' %}" alt="logo_jatayu" width="250">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-end" style="color: turquoise;" aria-current="page" href="../tentang">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-end" style="color: turquoise;" href="#">API</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-end" style="color: turquoise;" href="../unduh">Unduh Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-end" style="color: turquoise;" href="../kontak">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--akhir navbar-->
+  
+  <section>
+    <form action="">
+      <div class="container row text-light">
+        <div class="col-auto position-absolute bottom-0 start-0">
+          <label>Prediksi :</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="CAPE">
+            <label class="form-check-label" for="CAPE">
+              CAPE
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="ConvectiveInhibition">
+            <label class="form-check-label" for="ConvectiveInhibition">
+              Convective Inhibition
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="CloudCeiling">
+            <label class="form-check-label" for="CloudCeiling">
+              Cloud Ceiling
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="LowLevelTurbulance">
+            <label class="form-check-label" for="LowLevelTurbulance">
+              Low Level Turbulance
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="LowLevelWindShear">
+            <label class="form-check-label" for="LowLevelWindShear">
+              Low Level Wind Shear
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="MeanSealevelPreasureVisibility">
+            <label class="form-check-label" for="MeanSealevelPreasureVisibility">
+              Mean Sea level Preasure Visibility
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="MaximumWindSpeed">
+            <label class="form-check-label" for="MaximumWindSpeed">
+              Maximum Wind Speed (10 m)
+            </label>
+          </div>
+          <label>Observasi :</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Awan Tumbuh
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+              Cloud Top Height
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+              Cloud Top Pressure
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+              Cloud Top Temperature
+            </label>
+          </div>
+        </div>
+        <div class="col-auto position-absolute bottom-0 start-50 translate-middle-x">
+          <label for="customRange3" class="form-label">Example range</label>
+          <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+        </div>
+        <div class="col-auto">
+          
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer
+  <footer class="bg-light p-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="#">testing</a>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
